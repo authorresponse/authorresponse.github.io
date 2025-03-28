@@ -5,7 +5,10 @@
 ![](./static/FigR1.png)
 
 
-## B. Comparison with Text-to-4D methods
+
+## B. Highly Structured Texture Generation
+
+![](./static/FigR2.png)
 
 
 
@@ -13,4 +16,10 @@
 
 
 
-## D. More Ablations on Multi-view Denoise Algorithms
+
+
+## D. Comparison with Text-to-4D methods
+
+
+
+## E. More Ablations on Multi-view Denoise Algorithms
