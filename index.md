@@ -11,6 +11,18 @@
 
 ![](./static/FigR1.png)
 
+<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+    <video width="32%" loop muted playsinline>
+        <source src="./static/boo_views.mp4" type="video/mp4">
+    </video>
+    <video width="32%" loop muted playsinline>
+        <source src="./static/mon_views.mp4" type="video/mp4">
+    </video>
+    <video width="32%" loop muted playsinline>
+        <source src="./static/snow_views.mp4" type="video/mp4">
+    </video>
+</div>
+
 
 
 ## B. Highly Structured Texture Generation
@@ -20,8 +32,6 @@
 
 
 ## C. Video Results of Different Keyframe Numbers
-
-
 
 
 
