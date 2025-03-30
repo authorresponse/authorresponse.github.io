@@ -83,9 +83,44 @@ function showFullImage(src) {
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
+
+<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+    <video width="45%" controls loop muted playsinline>
+        <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
+    </video>
+</div>
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video Results with extreme less keyframes. Tex4D struggles to generate plausible textures by selecting 3 keyframes within 50 frames.</p>
+
+
 ![](./static/FigR3.png)
 
 ![](./static/FigR4.png)
+
+We also provide complete video comparisons in the [Appendix](#appendix).
+
+<!-- (3, 17), (10, 5), (17, 3) -->
+
+## E. Comparison with Text-to-4D methods
+
+
+
+## F. More Ablations on Multi-view Denoise Algorithms
+
+
+
+
+
+---
+
+### References
+
+[1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
+
+
+
+# Appendix
+
+## Video Comparisons for Sec. D
 
 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
     <div style="width: 32%;">
@@ -128,27 +163,6 @@ function showFullImage(src) {
     </div>
 </div>
 <p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
-
-<!-- (3, 17), (10, 5), (17, 3) -->
-
-## E. Comparison with Text-to-4D methods
-
-
-
-## F. More Ablations on Multi-view Denoise Algorithms
-
-
-
-
-
----
-
-### References
-
-[1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
-
-
-
 
 
 ## Video Demo
