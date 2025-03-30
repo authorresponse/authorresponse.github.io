@@ -3,10 +3,9 @@
 [A. Robustness of Different UV Mappings](#a-robustness-of-different-uv-mappings) <br>
 [B. Highly Structured Texture Generation](#b-highly-structured-texture-generation) <br>
 [C. Long Texture Sequence Generation](#c-long-texture-sequence-generation) <br>
-[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br>
-[E. Comparison with Text-to-4D methods](#e-comparison-with-text-to-4d-methods) <br>
-[F. More Ablations on Multi-view Denoise Algorithms](#f-more-ablations-on-multi-view-denoise-algorithms) 
-
+[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br>[E. More Ablations on Multi-view Denoise Algorithms](#e-more-ablations-on-multi-view-denoise-algorithms) <br>
+[F. Comparison with Text-to-4D methods](#f-comparison-with-text-to-4d-methods) <br>
+[Appendix](#appendix)
 
 ## A. Robustness of Different UV Mappings
 
@@ -30,11 +29,11 @@ function toggleImages() {
     const viewer = document.getElementById('imageViewer');
     viewer.style.display = viewer.style.display === 'none' ? 'block' : 'none';
 }
-
 function showFullImage(src) {
     const modal = document.createElement('div');
     modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000;';
     
+
     const img = document.createElement('img');
     img.src = src;
     img.style.cssText = 'max-width: 90%; max-height: 90%; object-fit: contain;';
@@ -84,12 +83,12 @@ function showFullImage(src) {
 ## D. Results of Different Keyframe Numbers and Resolutions
 
 
-<div style="display: flex; justify-content: space-between; margin: 10px 0;">
-    <video width="45%" controls loop muted playsinline>
+<div style="display: flex; justify-content: center; margin: 10px 0;">
+    <video width="40%" controls loop muted playsinline>
         <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video Results with extreme less keyframes. Tex4D struggles to generate plausible textures by selecting 3 keyframes within 50 frames.</p>
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video Results with extreme less keyframes. Tex4D struggles to generate plausible textures by only selecting 3 keyframes within 50 frames.</p>
 
 
 ![](./static/FigR3.png)
@@ -100,11 +99,13 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 <!-- (3, 17), (10, 5), (17, 3) -->
 
-## E. Comparison with Text-to-4D methods
+## E. More Ablations on Multi-view Denoise Algorithms
+
+![](./static/FigR5.png)
+
+## F. Comparison with Text-to-4D methods
 
 
-
-## F. More Ablations on Multi-view Denoise Algorithms
 
 
 
@@ -119,6 +120,8 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 
 # Appendix
+
+<br><br><br>
 
 ## Video Comparisons for Sec. D
 
@@ -162,7 +165,7 @@ We also provide complete video comparisons in the [Appendix](#appendix).
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(17 keyframes, 64x64 res.)</p>
     </div>
 </div>
-<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R4. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
 
 
 ## Video Demo
