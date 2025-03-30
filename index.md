@@ -45,7 +45,7 @@
         <source src="./static/300snow_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the fine details of textures.</p>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to video diffusion models distort high-frequency components in long videos <a href="#References">[1]</a>.</p>
 
 
 
@@ -58,3 +58,13 @@
 
 
 ## F. More Ablations on Multi-view Denoise Algorithms
+
+
+
+
+
+---
+
+<p id="#References"><strong>References</strong></p>
+
+[1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. Freelong: Training-free long video generation with spectralblend temporal attention. arXiv:2407.19918.
