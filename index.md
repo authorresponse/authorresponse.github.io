@@ -42,19 +42,19 @@
         <source src="./static/200snow_views.mp4" type="video/mp4">
     </video>
     <video width="32%" controls loop muted playsinline>
-        <source src="./static/200snow_views.mp4" type="video/mp4">
+        <source src="./static/300snow_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the fine details of textures.</p>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the fine details of textures.</p>
 
 
 
-## E. Video Results of Different Keyframe Numbers and Resolutions
+## D. Video Results of Different Keyframe Numbers and Resolutions
 
 
 
-## D. Comparison with Text-to-4D methods
+## E. Comparison with Text-to-4D methods
 
 
 
-## E. More Ablations on Multi-view Denoise Algorithms
+## F. More Ablations on Multi-view Denoise Algorithms
