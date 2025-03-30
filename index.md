@@ -11,12 +11,12 @@
 
 ![](./static/FigR1.png)
 
-<div style="text-align: center; margin: 10px 0;">
+<div style="text-align: center; margin: 0px 0;">
     <button onclick="toggleImages()" style="padding: 8px 16px; cursor: pointer; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 4px;">
         Click here to view high-resolution UV islands
     </button>
     <div id="imageViewer" style="display: none; margin-top: 10px;">
-        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+        <div style="display: flex; justify-content: space-between; margin: 10px 0 20px 0;">
             <img src="./static/smartuv_snowman.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
             <img src="./static/smartuv_boo.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
             <img src="./static/smartuv_monster.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
@@ -78,11 +78,13 @@ function showFullImage(src) {
         <source src="./static/300snow_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to video diffusion models distort high-frequency components in long videos <a href="#References">[1]</a>.</p>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to video diffusion models distort high-frequency components in long videos <a href="#references">[1]</a>.</p>
 
 
 
 ## D. Video Results of Different Keyframe Numbers and Resolutions
+
+
 
 
 
@@ -98,6 +100,6 @@ function showFullImage(src) {
 
 ---
 
-<p id="#References"><strong>References</strong></p>
+### References
 
 [1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. Freelong: Training-free long video generation with spectralblend temporal attention. arXiv:2407.19918.
