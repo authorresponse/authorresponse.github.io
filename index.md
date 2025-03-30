@@ -2,9 +2,10 @@
 
 [A. Robustness of Different UV Mappings](#a-robustness-of-different-uv-mappings) <br>
 [B. Highly Structured Texture Generation](#b-highly-structured-texture-generation) <br>
-[C. Video Results of Different Keyframe Numbers](#c-video-results-of-different-keyframe-numbers) <br>
-[D. Comparison with Text-to-4D methods](#d-comparison-with-text-to-4d-methods) <br>
-[E. More Ablations on Multi-view Denoise Algorithms](#e-more-ablations-on-multi-view-denoise-algorithms) 
+[C. Long Texture Sequence Generation](#c-long-texture-sequence-generation) <br>
+[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br>
+[E. Comparison with Text-to-4D methods](#e-comparison-with-text-to-4d-methods) <br>
+[F. More Ablations on Multi-view Denoise Algorithms](#f-more-ablations-on-multi-view-denoise-algorithms) 
 
 
 ## A. Robustness of Different UV Mappings
@@ -78,15 +79,55 @@ function showFullImage(src) {
         <source src="./static/300snow_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to video diffusion models distort high-frequency components in long videos <a href="#references">[1]</a>.</p>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to the video diffusion models distort high-frequency components in long videos <a href="#references">[1]</a>.</p>
 
+## D. Results of Different Keyframe Numbers and Resolutions
 
+<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(3 keyframes, 96x96 resolution)</p>
+    </div>
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_10_96_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(10 keyframes, 96x96 res.)</p>
+    </div>
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_17_96_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(17 keyframes, 96x96 res.)</p>
+    </div>
+</div>
+<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_3_64_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(3 keyframes, 64x64 res.)</p>
+    </div>
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_10_64_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(10 keyframes, 64x64 res.)</p>
+    </div>
+    <div style="width: 32%;">
+        <video width="100%" controls loop muted playsinline>
+            <source src="./static/50snow_17_64_views.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(17 keyframes, 64x64 res.)</p>
+    </div>
+</div>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R3. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
 
-## D. Video Results of Different Keyframe Numbers and Resolutions
+![](./static/FigR3.png)
 
-
-
-
+<!-- (3, 17), (10, 5), (17, 3) -->
 
 ## E. Comparison with Text-to-4D methods
 
@@ -102,4 +143,16 @@ function showFullImage(src) {
 
 ### References
 
-[1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. Freelong: Training-free long video generation with spectralblend temporal attention. arXiv:2407.19918.
+[1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
+
+
+
+
+
+## Video Demo
+
+<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+    <video width="86%" controls loop muted playsinline>
+        <source src="./static/video_teaser.mp4" type="video/mp4">
+    </video>
+</div>
