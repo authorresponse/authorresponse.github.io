@@ -32,7 +32,7 @@ function toggleImages() {
 function showFullImage(src) {
     const modal = document.createElement('div');
     modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000;';
-    
+​    
 
     const img = document.createElement('img');
     img.src = src;
@@ -82,13 +82,12 @@ function showFullImage(src) {
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
-
 <div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="40%" controls loop muted playsinline>
         <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video Results with extreme less keyframes. Tex4D struggles to generate plausible textures by only selecting 3 keyframes within 50 frames.</p>
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video Results with extremely less keyframes. Tex4D struggles to generate plausible textures by only selecting 3 keyframes within 50 frames.</p>
 
 
 ![](./static/FigR3.png)
@@ -117,11 +116,9 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 [1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
 
-
+<br><br><br>
 
 # Appendix
-
-<br><br><br>
 
 ## Video Comparisons for Sec. D
 
