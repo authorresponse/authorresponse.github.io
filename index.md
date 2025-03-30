@@ -83,49 +83,51 @@ function showFullImage(src) {
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
+![](./static/FigR3.png)
+
+![](./static/FigR4.png)
+
 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(3 keyframes, 96x96 resolution)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(3 keyframes, 96x96 resolution)</p>
     </div>
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_10_96_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(10 keyframes, 96x96 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(10 keyframes, 96x96 res.)</p>
     </div>
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_17_96_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(17 keyframes, 96x96 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(17 keyframes, 96x96 res.)</p>
     </div>
 </div>
-<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+<div style="display: flex; justify-content: space-between; margin: 4px 0;">
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_3_64_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(3 keyframes, 64x64 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(3 keyframes, 64x64 res.)</p>
     </div>
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_10_64_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(10 keyframes, 64x64 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(10 keyframes, 64x64 res.)</p>
     </div>
     <div style="width: 32%;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_17_64_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 5px; font-size: 0.8em;">(17 keyframes, 64x64 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(17 keyframes, 64x64 res.)</p>
     </div>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R3. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
-
-![](./static/FigR3.png)
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R3. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
 
 <!-- (3, 17), (10, 5), (17, 3) -->
 
@@ -151,7 +153,7 @@ function showFullImage(src) {
 
 ## Video Demo
 
-<div style="display: flex; justify-content: space-between; margin: 10px 0;">
+<div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="86%" controls loop muted playsinline>
         <source src="./static/video_teaser.mp4" type="video/mp4">
     </video>
