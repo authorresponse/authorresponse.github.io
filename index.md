@@ -11,6 +11,39 @@
 
 ![](./static/FigR1.png)
 
+<div style="text-align: center; margin: 10px 0;">
+    <button onclick="toggleImages()" style="padding: 8px 16px; cursor: pointer; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 4px;">
+        Click here to view high-resolution UV islands
+    </button>
+    <div id="imageViewer" style="display: none; margin-top: 10px;">
+        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+            <img src="./static/smartuv_snowman.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
+            <img src="./static/smartuv_boo.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
+            <img src="./static/smartuv_monster.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleImages() {
+    const viewer = document.getElementById('imageViewer');
+    viewer.style.display = viewer.style.display === 'none' ? 'block' : 'none';
+}
+
+function showFullImage(src) {
+    const modal = document.createElement('div');
+    modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000;';
+    
+    const img = document.createElement('img');
+    img.src = src;
+    img.style.cssText = 'max-width: 90%; max-height: 90%; object-fit: contain;';
+    
+    modal.onclick = () => document.body.removeChild(modal);
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+}
+</script>
+
 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
     <video width="32%" controls loop muted playsinline>
         <source src="./static/snow_views.mp4" type="video/mp4">
