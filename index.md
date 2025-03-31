@@ -67,7 +67,7 @@ function showFullImage(src) {
         <source src="./static/300snow_views.mp4" type="video/mp4">
     </video>
 </div>
-<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to the video diffusion models distort high-frequency components in long videos <a href="#references">[1]</a>.</p>
+<p style="text-align: left; margin-top: 5px; font-size: 1em;">Video R2. Rendered videos of scene "snowman" with long animation seqeunce (100 frames, 200 frames and 300 frames). We stack the frames for long texture sequence generation. Tex4D is robust in generating long sequence textures while preserve the dynamics. However, the texture details may degrade due to the video diffusion models distort high-frequency components in long videos <a href="#references">[1]</a>.</p>
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
@@ -103,7 +103,7 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 ## H. Comparison with Text-to-4D methods
 
-Fig. R6. Since the input settings of these methods (single view videos) are different from Tex4D which supports mesh guidance, we render the front view with foreground masks of Tex4D as their inputs, and compare the multi-view results.
+![](./static/FigR6.png)
 
 
 
@@ -127,17 +127,17 @@ Fig. R6. Since the input settings of these methods (single view videos) are diff
         </video>
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(3 keyframes, 96x96 resolution)</p>
     </div>
-    <div style="width: 32%;">
+    <div style="width: 32%; margin-right: 0;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_10_96_views.mp4" type="video/mp4">
         </video>
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(10 keyframes, 96x96 res.)</p>
     </div>
-    <div style="width: 32%;">
+    <div style="width: 32%; margin-left: 0;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_17_96_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(17 keyframes, 96x96 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(>10 keyframes, 96x96 res.)</p>
     </div>
 </div>
 <div style="display: flex; justify-content: space-between; margin: 4px 0;">
@@ -147,26 +147,26 @@ Fig. R6. Since the input settings of these methods (single view videos) are diff
         </video>
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(3 keyframes, 64x64 res.)</p>
     </div>
-    <div style="width: 32%;">
+    <div style="width: 32%; margin-right: 0;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_10_64_views.mp4" type="video/mp4">
         </video>
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(10 keyframes, 64x64 res.)</p>
     </div>
-    <div style="width: 32%;">
+    <div style="width: 32%; margin-left: 0;">
         <video width="100%" controls loop muted playsinline>
             <source src="./static/50snow_17_64_views.mp4" type="video/mp4">
         </video>
-        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(17 keyframes, 64x64 res.)</p>
+        <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(>10 keyframes, 64x64 res.)</p>
     </div>
 </div>
 <p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R4. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
 
 
-<!-- ## Video Demo
+## Video Demo
 
 <div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="86%" controls loop muted playsinline>
         <source src="./static/video_teaser.mp4" type="video/mp4">
     </video>
-</div> -->
+</div>
