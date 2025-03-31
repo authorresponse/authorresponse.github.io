@@ -16,13 +16,13 @@
     <img src="./static/smartuv_boo.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
     <img src="./static/smartuv_monster.png" style="width: 32%; cursor: pointer;" onclick="showFullImage(this.src)">
 </div>
-<p style="text-align: center; margin-top: 5px; font-size: 0.9em;">Figure: High-resolution UV islands for the snowman (left), boo (middle), and monster (right) models. Click on any image to view in full size.</p>
+<p style="text-align: center; margin-top: 0px; font-size: 0.9em;">Figure: High-resolution UV islands for the snowman (line 1), boo (line 2), and monster (line 3) models. Click on any image to view in full size.</p>
 
 <script>
 function showFullImage(src) {
     const modal = document.createElement('div');
     modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000;';
-    
+
     const img = document.createElement('img');
     img.src = src;
     img.style.cssText = 'max-width: 90%; max-height: 90%; object-fit: contain;';
@@ -71,6 +71,8 @@ function showFullImage(src) {
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
+<img src="./static/TabR1.png" style="width:50%;" />
+
 <div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="40%" controls loop muted playsinline>
         <source src="./static/50snow_3_96_views.mp4" type="video/mp4">
@@ -87,14 +89,19 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 <!-- (3, 17), (10, 5), (17, 3) -->
 
+## E. Evaluation on Multiview Consistency Scores
+
+![](./static/TabR2.png)
+
+## F. 
+
 ## E. More Ablations on Multi-view Denoise Algorithms
 
 ![](./static/FigR5.png)
 
 ## F. Comparison with Text-to-4D methods
 
-
-
+Fig. R6. Since the input settings of these methods (single view videos) are different from Tex4D which supports mesh guidance, we render the front view with foreground masks of Tex4D as their inputs, and compare the multi-view results.
 
 
 
@@ -154,10 +161,10 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 <p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R4. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
 
 
-## Video Demo
+<!-- ## Video Demo
 
 <div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="86%" controls loop muted playsinline>
         <source src="./static/video_teaser.mp4" type="video/mp4">
     </video>
-</div>
+</div> -->
