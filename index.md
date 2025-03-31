@@ -3,7 +3,7 @@
 [A. Robustness of Different UV Mappings](#a-robustness-of-different-uv-mappings) <br>
 [B. Highly Structured Texture Generation](#b-highly-structured-texture-generation) <br>
 [C. Long Texture Sequence Generation](#c-long-texture-sequence-generation) <br>
-[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br>[E. More Ablations on Multi-view Denoise Algorithms](#e-more-ablations-on-multi-view-denoise-algorithms) <br>
+[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br> [E. More Ablations on Multi-view Denoise Algorithms](#e-more-ablations-on-multi-view-denoise-algorithms) <br>
 [F. Comparison with Text-to-4D methods](#f-comparison-with-text-to-4d-methods) <br>
 [Appendix](#appendix)
 
@@ -71,7 +71,9 @@ function showFullImage(src) {
 
 ## D. Results of Different Keyframe Numbers and Resolutions
 
-<img src="./static/TabR1.png" style="width:50%;" />
+<div style="display: flex; justify-content: center;">
+    <img src="./static/TabR1.png" style="width:60%;" />
+</div>
 
 <div style="display: flex; justify-content: center; margin: 10px 0;">
     <video width="40%" controls loop muted playsinline>
@@ -93,13 +95,13 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 ![](./static/TabR2.png)
 
-## F. 
+## F. Statistical Significance of User Study
 
-## E. More Ablations on Multi-view Denoise Algorithms
+## G. More Ablations on Multi-view Denoise Algorithms
 
 ![](./static/FigR5.png)
 
-## F. Comparison with Text-to-4D methods
+## H. Comparison with Text-to-4D methods
 
 Fig. R6. Since the input settings of these methods (single view videos) are different from Tex4D which supports mesh guidance, we render the front view with foreground masks of Tex4D as their inputs, and compare the multi-view results.
 
