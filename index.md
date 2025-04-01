@@ -114,11 +114,12 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 ---
 
-### References
+<!-- ### References
 
 [1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
 
 <br><br><br>
+-->
 
 # Appendix
 
