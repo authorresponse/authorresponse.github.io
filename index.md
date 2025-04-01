@@ -3,9 +3,11 @@
 [A. Robustness of Different UV Mappings](#a-robustness-of-different-uv-mappings) <br>
 [B. Highly Structured Texture Generation](#b-highly-structured-texture-generation) <br>
 [C. Long Texture Sequence Generation](#c-long-texture-sequence-generation) <br>
-[D. Video Results of Different Keyframe Numbers and Resolutions](#d-video-results-of-different-keyframe-numbers-and-resolutions) <br> [E. More Ablations on Multi-view Denoise Algorithms](#e-more-ablations-on-multi-view-denoise-algorithms) <br>
-[F. Comparison with Text-to-4D methods](#f-comparison-with-text-to-4d-methods) <br>
-[Appendix](#appendix)
+[D. Results of Different Keyframe Numbers and Resolutions](#d-results-of-different-keyframe-numbers-and-resolutions) <br>
+[E. Evaluation on Multiview Consistency Scores](#e-evaluation-on-multiview-consistency-scores) <br>
+[F. Statistical Significance of User Study](#f-statistical-significance-of-user-study) <br>
+[G. More Ablations on Multi-view Denoise Algorithms](#g-more-ablations-on-multi-view-denoise-algorithms) <br>
+[H. Comparison with Text-to-4D methods](#h-comparison-with-text-to-4d-methods) <br>[Appendix](#appendix)
 
 ## A. Robustness of Different UV Mappings
 
