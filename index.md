@@ -99,6 +99,8 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 ## F. Statistical Significance of User Study
 
+![](./static/Tab3.png)
+
 ## G. More Ablations on Multi-view Denoise Algorithms
 
 ![](./static/FigR5.png)
@@ -120,7 +122,7 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 # Appendix
 
-## Video Comparisons for Sec. D
+<!-- ## Video Comparisons for Sec. D
 
 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
     <div style="width: 32%;">
@@ -162,7 +164,7 @@ We also provide complete video comparisons in the [Appendix](#appendix).
         <p style="text-align: center; margin-top: 2px; font-size: 0.8em;">(>10 keyframes, 64x64 res.)</p>
     </div>
 </div>
-<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R4. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p>
+<p style="text-align: left; margin-top: 4px; font-size: 1em;">Video R4. Video comparisons with different keyframe numbers and different latent resolutions. Tex4D could express more dynamics and texture details during the animation with the increasing of keyframes during the denoising period.</p> -->
 
 
 ## Video Demo
