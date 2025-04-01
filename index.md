@@ -99,7 +99,7 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 
 ## F. Statistical Significance of User Study
 
-![](./static/Tab3.png)
+![](./static/TabR3.png)
 
 ## G. More Ablations on Multi-view Denoise Algorithms
 
