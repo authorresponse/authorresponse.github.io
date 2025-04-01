@@ -7,7 +7,7 @@
 [E. Evaluation on Multiview Consistency Scores](#e-evaluation-on-multiview-consistency-scores) <br>
 [F. Statistical Significance of User Study](#f-statistical-significance-of-user-study) <br>
 [G. More Ablations on Multi-view Denoise Algorithms](#g-more-ablations-on-multi-view-denoise-algorithms) <br>
-[H. Comparison with Text-to-4D methods](#h-comparison-with-text-to-4d-methods) <br>[Appendix](#appendix)
+[H. Comparison with Text-to-4D methods](#h-comparison-with-text-to-4d-methods) 
 
 ## A. Robustness of Different UV Mappings
 
@@ -110,18 +110,14 @@ We also provide complete video comparisons in the [Appendix](#appendix).
 ![](./static/FigR6.png)
 
 
+<br><br><br>
 
-
----
 
 <!-- ### References
 
 [1] Lu, Yu and Liang, Yuanzhi and Zhu, Linchao and Yang, Yi. FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention. arXiv:2407.19918.
 
-<br><br><br>
 -->
-
-# Appendix
 
 <!-- ## Video Comparisons for Sec. D
 
