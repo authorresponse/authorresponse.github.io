@@ -89,8 +89,6 @@ function showFullImage(src) {
 
 ![](./static/FigR4.png)
 
-We also provide complete video comparisons in the [Appendix](#appendix).
-
 <!-- (3, 17), (10, 5), (17, 3) -->
 
 ## E. Evaluation on Multiview Consistency Scores
